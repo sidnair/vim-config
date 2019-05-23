@@ -28,11 +28,16 @@ Notes
   render some unicode symbols. You can disable this by removing the line
     `let g:airline_powerline_fonts = 1`
   from the vimrc. [vim-airline](https://github.com/bling/vim-airline) Has
-  instructions for updating the font if you want to symbols. On my Linux box, I
-  ran `fc-match monospace` to find which font I was using in my terminal, moved
-  the relevant font from [here](https://github.com/Lokaltog/powerline-fonts) to
-  ~/.fonts, ran `fc-cache -v ~/.fonts` to update the font cache, and updated my
-  KDE settings to use it.
+  instructions for updating the font if you want to symbols.
+
+  You can install all the fonts from https://github.com/powerline/fonts.
+
+  On my Linux box, I ran `fc-match monospace` to find which font I was using in
+  my terminal, moved the relevant font from
+  [here](https://github.com/Lokaltog/powerline-fonts) to ~/.fonts, ran `fc-cache
+  -v ~/.fonts` to update the font cache, and updated my KDE settings to use it.
+
+  On OS X, I set the font in iTerm to the patched version of Deja Vu.
 
 .mine files
 ------------
@@ -46,3 +51,19 @@ Compatability
 ------------
 
 Should work on Linux and Mac OS X. Untested on Windows.
+
+
+nvim
+------------
+
+1) Install neovim (e.g. `brew install neovim`)
+
+2) Create `~/.config/nvim/init.vim` with:
+
+```
+set runtimepath^ = ~/.vim runtimepath+ = ~/.vim/after
+let &packpath    = &runtimepath
+source ~/.vimrc
+```
+
+3) `pip install neovim` for Python support
