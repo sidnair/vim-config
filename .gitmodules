@@ -237,3 +237,6 @@
 [submodule "bundle/jsx"]
 	path = bundle/jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git

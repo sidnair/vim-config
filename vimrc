@@ -271,6 +271,8 @@ augroup rainbow
   autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost,Syntax * nested call s:load()
 augroup END
 
+let g:typescript_indent_disable = 1
+
 """""""""""""""""""""""""
 " Ruby Stuff
 """""""""""""""""""""""""
