@@ -1,7 +1,7 @@
-let g:neomake_javascript_ctags_maker = { 'exe': '/Users/sid/code/work/scripts/update-pgui-ctags.sh' }
+" let g:neomake_javascript_ctags_maker = { 'exe': '/Users/sid/code/work/scripts/update-pgui-ctags.sh' }
 
-let g:neomake_javascript_enabled_makers = ['flow', 'eslint', 'ctags']
-autocmd! BufWritePost *.js Neomake
+" let g:neomake_javascript_enabled_makers = ['flow', 'eslint', 'ctags']
+" autocmd! BufWritePost *.js Neomake
 
 let g:neoformat_javascript_prettier = {
             \ 'exe': 'prettier',

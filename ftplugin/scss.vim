@@ -15,4 +15,4 @@ let g:neoformat_scss_prettier = {
 let g:neoformat_enabled_scss = ['prettier']
 
 autocmd! BufWritePre *.scss Neoformat
-autocmd! BufWritePost *.scss Neomake
+" autocmd! BufWritePost *.scss Neomake

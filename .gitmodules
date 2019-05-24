@@ -228,9 +228,6 @@
 [submodule "bundle/neoformat"]
 	path = bundle/neoformat
 	url = git@github.com:sbdchd/neoformat
-[submodule "bundle/neomake"]
-	path = bundle/neomake
-	url = git@github.com:neomake/neomake
 [submodule "bundle/flow"]
 	path = bundle/flow
 	url = git@github.com:flowtype/vim-flow
@@ -240,3 +237,6 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
