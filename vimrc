@@ -193,7 +193,15 @@ let g:UltiSnipsListSnippets = '<c-h>'
 nnoremap <silent> <Leader>gd :Gdiff<CR>
 nnoremap <silent> <Leader>gb :Gblame<CR>
 
-nnoremap <Leader>a :Ack 
+nnoremap <Leader>ad :ALEGoToDefinition<CR>
+nnoremap <Leader>ap :ALEGoToDefinitionInSplit<CR>
+nnoremap <Leader>av :ALEGoToDefinitionInVSplit<CR>
+nnoremap <Leader>ar :ALEFindReferences<CR>
+nnoremap <Leader>ah :ALEHover<CR>
+nnoremap <Leader>as :ALESymbolSearch 
+
+nnoremap <Leader>q :Ack 
+
 
 " Put a space around comment markers
 let g:NERDSpaceDelims = 1
@@ -273,14 +281,16 @@ augroup END
 
 let g:typescript_indent_disable = 1
 
+
+
 """""""""""""""""""""""""
 " Ruby Stuff
 """""""""""""""""""""""""
-command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
-map <Leader>w :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
-map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
+" command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
+" map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+" map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+" map <Leader>w :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+" map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
 " map <Leader>r :w<CR> :call ScreenShellSend(":load ".@%)<CR>
 
 """""""""""""""""""""""""
