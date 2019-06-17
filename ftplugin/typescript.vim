@@ -11,7 +11,7 @@ let b:ale_fixers = ['prettier', 'tslint']
 
 " let g:neoformat_typescript_prettier = {
             " \ 'exe': 'prettier',
-            " \ 'args': ['--stdin',  '--parser babylon'],
+            " \ 'args': ['--stdin',  '--parser babel'],
             " \ 'stdin': 1
             " \ }
 " let g:neoformat_enabled_typescript = ['prettier']

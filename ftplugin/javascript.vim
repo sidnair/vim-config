@@ -8,7 +8,7 @@ let b:ale_fixers = ['prettier', 'eslint']
 
 " let g:neoformat_javascript_prettier = {
             " \ 'exe': 'prettier',
-            " \ 'args': ['--stdin', '--trailing-comma es5', '--single-quote', '--parser babylon'],
+            " \ 'args': ['--stdin', '--trailing-comma es5', '--single-quote', '--parser babel'],
             " \ 'stdin': 1
             " \ }
 " let g:neoformat_enabled_javascript = ['prettier']
