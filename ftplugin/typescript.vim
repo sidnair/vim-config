@@ -1,5 +1,10 @@
 let g:ale_fix_on_save = 1
-let b:ale_fixers = ['prettier', 'tslint']
+
+let b:ale_linters = ['tsserver',  'tslint']
+let b:ale_fixers = ['prettier']
+
+
+" let b:ale_fixers = ['prettier', 'tslint']
 
 " let g:neomake_typescript_ctags_maker = { 'exe': '/Users/sid/code/work/scripts/update-pgui-ctags.sh' }
 

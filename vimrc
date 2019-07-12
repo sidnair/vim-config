@@ -279,8 +279,11 @@ augroup rainbow
   autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost,Syntax * nested call s:load()
 augroup END
 
-let g:typescript_indent_disable = 1
-
+" let g:typescript_indent_disable = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_lint_delay = 5000
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_save = 1
 
 
 """""""""""""""""""""""""

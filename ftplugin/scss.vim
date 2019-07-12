@@ -9,7 +9,7 @@
 
 let g:neoformat_scss_prettier = {
             \ 'exe': 'prettier',
-            \ 'args': ['--stdin', '--parser postcss', '--single-quote'],
+            \ 'args': ['--stdin', '--parser css', '--single-quote'],
             \ 'stdin': 1
             \ }
 let g:neoformat_enabled_scss = ['prettier']
