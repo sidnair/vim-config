@@ -1,8 +1,11 @@
 let g:ale_fix_on_save = 1
 
-let b:ale_linters = ['tsserver',  'tslint']
+let b:ale_linters = ['tsserver']
 let b:ale_fixers = ['prettier']
 
+" let g:ale_fix_on_save = 0
+" let b:ale_linters = []
+" let b:ale_fixers = []
 
 " let b:ale_fixers = ['prettier', 'tslint']
 
